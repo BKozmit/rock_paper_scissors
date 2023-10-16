@@ -14,7 +14,6 @@ return computerSelection;
 }
 
 function playRound() {
-      let playerSelection = prompt('Rock, Paper, or Scissors?')
       if (computerSelection = 'Rock') {
          if (playerSelection = 'Rock') {
             print('Rock ties with Rock!');
@@ -52,6 +51,8 @@ function playRound() {
          print('That was not an option given! Try again');
       }
 }
+
+let playerSelection = prompt('Rock, Paper, or Scissors?')
 //prompt user to type 'Rock' 'Paper' or 'Scissors'
 //make user input be case insensative
 //create answers for each combination rock paper scissors
