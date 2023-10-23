@@ -13,13 +13,12 @@ function getComputerChoice() {
 return computerSelection;
 }
 
-function getPlayerSelection() {
-   let playerSelection = prompt("Rock, Paper, or Scissors?");
-   return playerSelection;
-}
-//let playerSelection = prompt('Rock, Paper, or Scissors?')
-//create function with answers for each combination rock paper scissors
-function playRound() {
+//prompt user to type 'Rock' 'Paper' or 'Scissors'
+let playerSelection = prompt("Rock, Paper, or Scissors?");
+let computerSelection = getComputerChoice();
+
+//create function with answers for each combination rock paper scissors and return to user whether win lose or tie
+function playRound(computerSelection, playerSelection) {
       if (computerSelection == 'Rock') {
          if (playerSelection == 'Rock') {
             return 'Rock ties with Rock!';
@@ -58,10 +57,11 @@ function playRound() {
       }
 }
 
-let computerSelection
-let playerSelection
-console.log(getComputerChoice());
-//prompt user to type 'Rock' 'Paper' or 'Scissors'
+console.log(playRound(computerSelection, playerSelection));
+//function game() {
+   //playerSelection = prompt("Rock, Paper, or Scissors?");
+   //computerSelection = getComputerChoice();
+   //console.log(playRound(playerSelection, computerSelection));
+//}
 //make user input be case insensative
-//return to user whether win lose or tie
 //prompt user wheather to play again or not
