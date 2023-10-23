@@ -15,6 +15,7 @@ return computerSelection;
 //let playerSelection = prompt('Rock, Paper, or Scissors?')
 //create function with answers for each combination rock paper scissors
 function playRound() {
+      playerSelection = prompt("Enter Rock, Paper, or Scissors!")
       if (computerSelection == 'Rock') {
          if (playerSelection == 'Rock') {
             return 'Rock ties with Rock!';
@@ -53,10 +54,6 @@ function playRound() {
       }
 }
 
-
-const playerSelection = 'Rock';
-let computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
 //prompt user to type 'Rock' 'Paper' or 'Scissors'
 //make user input be case insensative
 //return to user whether win lose or tie
