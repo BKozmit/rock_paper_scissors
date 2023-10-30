@@ -14,11 +14,11 @@ return computerSelection;
 }
 
 //prompt user to type 'Rock' 'Paper' or 'Scissors'
-let playerSelection = prompt("Rock, Paper, or Scissors?");
-let computerSelection = getComputerChoice();
+let playerSelection;
+let computerSelection;
 
 //create function with answers for each combination rock paper scissors and return to user whether win lose or tie
-function playRound() {
+function playRound(playerSelection, computerSelection) {
       if (computerSelection == 'Rock') {
          if (playerSelection == 'Rock') {
             return 'Rock ties with Rock!';
@@ -58,8 +58,8 @@ function playRound() {
 }
 
 function game() {
-   let playerSelection = prompt("Rock, Paper, or Scissors?");
-   let computerSelection = getComputerChoice();
+   playerSelection = prompt("Rock, Paper, or Scissors?");
+   computerSelection = getComputerChoice();
    playRound(playerSelection, computerSelection);
    console.log(playRound(playerSelection, computerSelection));
 
