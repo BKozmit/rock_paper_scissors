@@ -21,10 +21,10 @@ let computerSelection;
 function playRound(playerSelection, computerSelection) {
       if (computerSelection.toLowerCase() == 'rock') {
          if (playerSelection.toLowerCase() == 'rock') {
-            return 'Rock ties with Rock!';
+            return 'Rock ties with Rock! You Tied';
          }
          if (playerSelection.toLowerCase() == 'paper') {
-            return 'Paper beats Rock! You Win!';
+            return 'Paper beats Rock! You Win!!';
          }
          if (playerSelection.toLowerCase() == 'scissors') {
             return 'Scissors looses to Rock! You Lose!';
@@ -35,21 +35,21 @@ function playRound(playerSelection, computerSelection) {
             return 'Rock looses to Paper! You Lose!';
          }
          if (playerSelection.toLowerCase() == 'paper') {
-            return 'Paper ties with Paper! Try Again!';
+            return 'Paper ties with Paper! You Tied!';
          }
          if (playerSelection.toLowerCase() == 'scissors') {
-            return 'Scissors beats Paper! You Win!';
+            return 'Scissors beats Paper! You Win!!';
          }
       }
       if (computerSelection.toLowerCase() == 'scissors') {
          if (playerSelection.toLowerCase() == 'rock') {
-            return 'Rock beats Scissors! You Win!';
+            return 'Rock beats Scissors! You Win!!';
          }
          if (playerSelection.toLowerCase() == 'paper') {
             return 'Paper looses to Scissors! You Lose!';
          }
          if (playerSelection.toLowerCase() == 'scissors') {
-            return 'Scissors ties with Scissors! Try Again!';
+            return 'Scissors ties with Scissors! You Tied!';
          }
       }
       else {
@@ -57,13 +57,25 @@ function playRound(playerSelection, computerSelection) {
       }
 }
 
+function scoreTracker() {
+   if (outcome == 'You Win!!') {
+      return 1;
+   } if (outcome == 'You Tied!') {
+      return 0;
+   } if (outcome == 'You Lose!') {
+      return -1;
+   }
+}
+
 function game() {
+   let score = 0;
    playerSelection = prompt("Round 1: Rock, Paper, or Scissors?");
    computerSelection = getComputerChoice();
-   playRound(playerSelection, computerSelection);
+   let gameOutcome = playRound(playerSelection, computerSelection);
    console.log(playRound(playerSelection, computerSelection));
+   
 
-   playerSelection = prompt("Round 2: Rock, Paper, or Scissors?");
+   playerSelection = prompt("Round 2: Rock, Paper, or cissors?");
    computerSelection = getComputerChoice();
    playRound(playerSelection, computerSelection)
    console.log(playRound(playerSelection, computerSelection));
