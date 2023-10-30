@@ -19,36 +19,36 @@ let computerSelection;
 
 //create function with answers for each combination rock paper scissors and return to user whether win lose or tie
 function playRound(playerSelection, computerSelection) {
-      if (computerSelection == 'Rock') {
-         if (playerSelection == 'Rock') {
+      if (computerSelection.toLowerCase() == 'rock') {
+         if (playerSelection.toLowerCase() == 'rock') {
             return 'Rock ties with Rock!';
          }
-         if (playerSelection == 'Paper') {
+         if (playerSelection.toLowerCase() == 'paper') {
             return 'Paper beats Rock! You Win!';
          }
-         if (playerSelection == 'Scissors') {
+         if (playerSelection.toLowerCase() == 'scissors') {
             return 'Scissors looses to Rock! You Lose!';
          }
       }
-      if (computerSelection == 'Paper') {
-         if (playerSelection == 'Rock') {
+      if (computerSelection.toLowerCase() == 'paper') {
+         if (playerSelection.toLowerCase() == 'rock') {
             return 'Rock looses to Paper! You Lose!';
          }
-         if (playerSelection == 'Paper') {
+         if (playerSelection.toLowerCase() == 'paper') {
             return 'Paper ties with Paper! Try Again!';
          }
-         if (playerSelection == 'Scissors') {
+         if (playerSelection.toLowerCase() == 'scissors') {
             return 'Scissors beats Paper! You Win!';
          }
       }
-      if (computerSelection == 'Scissors') {
-         if (playerSelection == 'Rock') {
+      if (computerSelection.toLowerCase() == 'scissors') {
+         if (playerSelection.toLowerCase() == 'rock') {
             return 'Rock beats Scissors! You Win!';
          }
-         if (playerSelection == 'Paper') {
+         if (playerSelection.toLowerCase() == 'paper') {
             return 'Paper looses to Scissors! You Lose!';
          }
-         if (playerSelection == 'Scissors') {
+         if (playerSelection.toLowerCase() == 'scissors') {
             return 'Scissors ties with Scissors! Try Again!';
          }
       }
