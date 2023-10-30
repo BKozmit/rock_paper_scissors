@@ -58,32 +58,30 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-   playerSelection = prompt("Rock, Paper, or Scissors?");
+   playerSelection = prompt("Round 1: Rock, Paper, or Scissors?");
    computerSelection = getComputerChoice();
    playRound(playerSelection, computerSelection);
    console.log(playRound(playerSelection, computerSelection));
 
-   playerSelection = prompt("Rock, Paper, or Scissors?");
+   playerSelection = prompt("Round 2: Rock, Paper, or Scissors?");
    computerSelection = getComputerChoice();
    playRound(playerSelection, computerSelection)
    console.log(playRound(playerSelection, computerSelection));
 
-   playerSelection = prompt("Rock, Paper, or Scissors?");
+   playerSelection = prompt("Round 3: Rock, Paper, or Scissors?");
    computerSelection = getComputerChoice();
    playRound(playerSelection, computerSelection);
    console.log(playRound(playerSelection, computerSelection));
 
-   playerSelection = prompt("Rock, Paper, or Scissors?");
+   playerSelection = prompt("Round 4: Rock, Paper, or Scissors?");
    computerSelection = getComputerChoice();
    playRound(playerSelection, computerSelection);
    console.log(playRound(playerSelection, computerSelection));
 
-   playerSelection = prompt("Rock, Paper, or Scissors?");
+   playerSelection = prompt("Round 5: Rock, Paper, or Scissors?");
    computerSelection = getComputerChoice();
    playRound(playerSelection, computerSelection);
    console.log(playRound(playerSelection, computerSelection));
 }
 
 game();
-//make user input be case insensative
-//prompt user wheather to play again or not
